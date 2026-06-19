@@ -15,26 +15,25 @@ This is a personal project for my own use and therefore the providers are what I
 
 ```
 .
-├── Dockerfile            # FROM hashicorp/terraform, copies the plugin cache in
+├── Dockerfile            # Generates the Docker image
 ├── terraform/
-│   └── versions.tf       # providers + pinned versions to bundle
-├── DockerHub.md          # description published to Docker Hub
-└── README.md
+│   └── versions.tf       # Providers and pinned versions
+├── DockerHub.md          # Description on Docker Hub
+└── README.md             # This file
 ```
 
 > The `plugin-cache/` directory is generated at build time and is not committed (`.terraform` and `.terraform.lock.hcl` are git-ignored).
 
 ## Included providers
 
-| Provider     | Source                 | Version  |
-| ------------ | ---------------------- | -------- |
-| `aws`        | `hashicorp/aws`        | 6.51.0   |
-| `cloudflare` | `cloudflare/cloudflare`| 5.20.0   |
-| `bunnynet`   | `BunnyWay/bunnynet`    | 0.14.3   |
-| `archive`    | `hashicorp/archive`    | 2.8.0    |
-| `time`       | `hashicorp/time`       | 0.14.0   |
+The providers that are currently included in this image are:
+* `BunnyWay/bunnynet`
+* `cloudflare/cloudflare`
+* `hashicorp/aws`
+* `hashicorp/archive`
+* `hashicorp/time`
 
-The base image is `hashicorp/terraform:1.15.6` (see the `FROM` line in the `Dockerfile`).
+See the [change log](CHANGELOG.md) for the provider versions in each release.
 
 ## Building the image
 
