@@ -4,6 +4,22 @@ All releases for this project will be documented in this file.
 
 Version numbering is as follows: `<terraform-version>-<build-date>`, e.g. `1.15.6-20260618`.
 
+## 1.15.6-20260621
+
+This version updates `cloudflare/cloudflare` from `5.20.0` to `5.21.0`.
+
+Upstream Image: `hashicorp/terraform:1.15.6`
+
+### Included Providers
+
+| Provider     | Source                 | Version |
+| ------------ | ---------------------- |---------|
+| `aws`        | `hashicorp/aws`        | 6.51.0  |
+| `cloudflare` | `cloudflare/cloudflare`| 5.21.0  |
+| `bunnynet`   | `BunnyWay/bunnynet`    | 0.14.3  |
+| `archive`    | `hashicorp/archive`    | 2.8.0   |
+| `time`       | `hashicorp/time`       | 0.14.0  |
+
 ## 1.15.6-20260618
 
 > [!NOTE]

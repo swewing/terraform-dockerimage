@@ -2,7 +2,7 @@
 
 Based on [`hashicorp/terraform`](https://hub.docker.com/r/hashicorp/terraform), with commonly used providers pre-populated in the Terraform plugin cache to speed up pipeline builds.
 
-See [`github.com/swewing/terraform-dockerimage`](https://github.com/swewing/terraform-dockerimage) for the image build repository.
+See [`github.com/swewing/terraform-dockerimage`](https://github.com/swewing/terraform-dockerimage) for the image build repository and release notes.
 
 ## Included providers
 
