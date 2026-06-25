@@ -2,15 +2,15 @@ terraform {
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "6.51.0"
+      version = "6.52.0"
     }
     bunnynet = {
       source  = "BunnyWay/bunnynet"
-      version = "0.14.3"
+      version = "0.15.1"
     }
     cloudflare = {
       source  = "cloudflare/cloudflare"
-      version = "5.21.0"
+      version = "5.21.1"
     }
     time = {
       source  = "hashicorp/time"
